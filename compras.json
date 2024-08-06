@@ -1,0 +1,42 @@
+[
+    {
+        "fechaCompra": 2320,
+        "nombreProvedor": "jesus",
+        "contacto": 3222222,
+        "nombreProducto": "Pan Cascarita",
+        "cantidad": "500",
+        "precioCompra": 50000
+    },
+    {
+        "fechaCompra": 202444,
+        "nombreProvedor": "valerie",
+        "contacto": 31195955,
+        "nombreProducto": "Pan de Queso",
+        "cantidad": "800",
+        "precioCompra": 70000
+    },
+    {
+        "fechaCompra": 202444,
+        "nombreProvedor": "valerie",
+        "contacto": 31195955,
+        "nombreProducto": "Pan de Bono",
+        "cantidad": "700",
+        "precioCompra": 70000
+    },
+    {
+        "fechaCompra": 202444,
+        "nombreProvedor": "valerie",
+        "contacto": 31195955,
+        "nombreProducto": "Pan de Yuca",
+        "cantidad": "800",
+        "precioCompra": 70000
+    },
+    {
+        "fechaCompra": 202444,
+        "nombreProvedor": "valerie",
+        "contacto": 31195955,
+        "nombreProducto": "Calentano",
+        "cantidad": "800",
+        "precioCompra": 70000
+    }
+]
