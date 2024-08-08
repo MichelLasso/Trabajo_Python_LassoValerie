@@ -26,7 +26,7 @@ if opcion==1:
 
     print("|Registrar venta|")
 
-    fechaventa=int(input("Ingrese la fecha"))
+    fechaventa=str(input("Ingrese la fecha"))
     print("")
     print("|Por favor ingresar los datos del cliente|")
     print("")
@@ -64,7 +64,7 @@ if opcion==2:
     print("|Registrar Compras|")
     print("")
 
-    fechaCompra= int(input("Fecha de Compra: \n"))
+    fechaCompra= str(input("Fecha de Compra: \n"))
     print("")
     print("Ingrese los datos del provedor")
     print("")
@@ -78,6 +78,7 @@ if opcion==2:
     cantidad= str(input("Cantidad: \n"))
     precioCompra= int(input("precio de compra: \n"))
 
+    #Añadir datos al json
     compras={
         "fechaCompra": fechaCompra,
         "nombreProvedor": nombreprovedor,
@@ -105,6 +106,19 @@ if opcion==3:
 
     system("cls")
     print("|Registro de Ventas|")
+    cell=0
+    print("Ingrese la fecha de las ventas que busca")
+    fordate=input()
+    print("")
+    for i in ventajson:
+        if i["fecha"]==fordate:
+            print("Datos de la última compra:")
+            print(f"Fecha: {i['fecha']}")
+            print(f"Cliente: {i['nombre']}")
+            print(f"Empleado: {i['empleado']}")
+            print(f"Producto vendido: {i['productoVendido']}")
+        else:
+            print("No hay ventas con esa fecha")
 
 if opcion==4:
     system("cls")
