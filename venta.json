@@ -1,8 +1,10 @@
 [
     {
-        "fecha": "07-01-2024",
-        "nombre": "valerie",
-        "empleado": "jesus",
-        "productoVendido": " pan de chocolate"
+        "fecha": "2024-07-01",
+        "nombre": "maria",
+        "empleado": "luis",
+        "productoVendido": "pan de queso",
+        "cantidad": "2",
+        "total": "12.000"
     }
 ]

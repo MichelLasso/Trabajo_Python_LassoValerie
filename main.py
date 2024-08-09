@@ -11,9 +11,9 @@ with open("compras.json", "r") as openfile:
 
 variable={}
 
-print("------------------------------------------------")# MENU
+print("────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────")# MENU
 print("                 PanCamp                    ")
-print("------------------------------------------------\n")
+print("────୨ৎ────────୨ৎ────────୨ৎ────────୨ৎ────\n")
 
 print("1. Registrar venta")
 print("2. Registrar compra")
@@ -23,45 +23,57 @@ print("")
 opcion=int(input("Ingrese el número de la opción que deseas ver: "))
 
 if opcion==1:
-
-    print("|Registrar venta|")
-
+    
+    system("cls")
+    print("────୨ৎ────────୨ৎ────Registrar venta────୨ৎ────────୨ৎ────")
+    print("")
     fechaventa=str(input("Ingrese la fecha"))
     print("")
     print("|Por favor ingresar los datos del cliente|")
     print("")
-    nombreCliente=str(input("Nombre:\n"))
-    direccionCliente= str(input("Dirección:\n"))
+    nombreCliente=str(input("Nombre: "))
+    direccionCliente= str(input("Dirección: "))
     print("")
     print("|Ingrese los datos del Empleado|\n")
-    nombreEmpleado=str(input("Nombre\n"))
-    empleado=str(input("Cargo:\n"))
+    nombreEmpleado=str(input("Nombre "))
+    empleado=str(input("Cargo: "))
     print("")
-    producto=str(input("Ingrese el nombre del producto vendido"))
+    producto=str(input("Ingrese el nombre del producto vendido: "))
+    cantidadvendido=str(input("Ingrese la cantidad del producto vendido: "))
+    preciovendido=str(input("Ingrese el precio total del producto: "))
 
 
     variable={
         "fecha": fechaventa,
         "nombre": nombreCliente,
         "empleado": nombreEmpleado,
-        "productoVendido": producto
+        "productoVendido": producto,
+        "cantidad": cantidadvendido,
+        "total": preciovendido
     }
 
     ventajson +=[variable]
     with open("venta.json", "w") as outfile:
         json.dump(ventajson, outfile, indent=4)
 
-    print("venta realizada")
+    print("Registro de venta exitosa ")
+    system("cls")
+
+
     # Imprimir los datos de la variable
-    print("Datos de la última compra:")
+    print("────୨ৎ────────୨ৎ────Datos de la última compra────୨ৎ────────୨ৎ────")
+    print("")
     print(f"Fecha: {variable['fecha']}")
     print(f"Cliente: {variable['nombre']}")
     print(f"Empleado: {variable['empleado']}")
     print(f"Producto vendido: {variable['productoVendido']}")
+    print(f"Cantidad vendida: {variable["cantidad"]}")
+    print(f"Precio del producto: {variable["total"]}")
 
 if opcion==2:
 
-    print("|Registrar Compras|")
+    system("cls")
+    print("────୨ৎ────────୨ৎ────Registrar Compras────୨ৎ────────୨ৎ────")
     print("")
 
     fechaCompra= str(input("Fecha de Compra: \n"))
@@ -91,10 +103,10 @@ if opcion==2:
     with open("compras.json", "w") as outfile:
         json.dump(compraJson, outfile, indent=4)
     print("")
-    print("|Compra Realizada|")
+    print("────୨ৎ────────୨ৎ────Compra Realizada────୨ৎ────────୨ৎ────")
     print("")
     # Imprimir los datos de la variable
-    print("Datos de la última compra:")
+    print("────୨ৎ────────୨ৎ────Datos de la última compra────୨ৎ────────୨ৎ────")
     print(f"Fecha: {compras['fechaCompra']}")
     print(f"Nombre del provedor: {compras['nombreProvedor']}")
     print(f"contacto: {compras['contacto']}")
@@ -105,7 +117,7 @@ if opcion==2:
 if opcion==3:
 
     system("cls")
-    print("|Registro de Ventas|")
+    print("────୨ৎ────────୨ৎ────Registro de Ventas────୨ৎ────────୨ৎ────")
     cell=0
     print("Ingrese la fecha de las ventas que busca")
     fordate=input()
@@ -118,12 +130,13 @@ if opcion==3:
             print(f"Empleado: {i['empleado']}")
             print(f"Producto vendido: {i['productoVendido']}")
         else:
-            print("No hay ventas con esa fecha")
+            print("✗")
+            print("No hay ventas con esa fecha ")
 
 if opcion==4:
     system("cls")
     print("")
-    print("|Registro de Compras|")
+    print("────୨ৎ────────୨ৎ────Registro de Compras────୨ৎ────────୨ৎ────")
     print("")
 
     contador=1
