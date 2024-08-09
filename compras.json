@@ -55,14 +55,7 @@
         "cantidad": "700",
         "precioCompra": 490000
     },
-    {
-        "fechaCompra": "2024-02-01",
-        "nombreProvedor": "Lenin Lopez",
-        "contacto": 3226547890,
-        "nombreProducto:":"Pan relleno de Arequipe",
-        "cantidad": 20,
-        "precioCompra": 23000
-    },
+    
     {
         "fechaCompra": "2024-02-01",
         "nombreProvedor": "María Sandoval",
@@ -230,5 +223,14 @@
         "nombreProducto":"Tropicana",
         "cantidad": 50,
         "precioCompra": 120000
+    },
+    {
+        
+        "fechaCompra": "2024-04-01",
+        "nombreProvedor": "Lenin Lopez",
+        "contacto": 3226547890,
+        "nombreProducto":"Pan relleno de Arequipe",
+        "cantidad": 20,
+        "precioCompra": 23000
     }
 ]
