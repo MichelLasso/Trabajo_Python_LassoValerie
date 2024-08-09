@@ -12,7 +12,7 @@ with open("compras.json", "r") as openfile:
 variable={}
 
 print("------------------------------------------------")# MENU
-print("                 PanCamp :)                    ")
+print("                 PanCamp                    ")
 print("------------------------------------------------\n")
 
 print("1. Registrar venta")
