@@ -10,6 +10,13 @@ Este programa cumple con:
 * Busqueda de ventas por fecha
 * Información de compras
 
+## Comandos git
+```git branch```
+
+```git merge desarrollo```
+
+```git push origin desarrollo```
+
 ## Instalación
 * Clona el repositorio: Utiliza el comando "git clone" seguido de la URL del repositorio para clonar el proyecto en tu computadora local.
 
