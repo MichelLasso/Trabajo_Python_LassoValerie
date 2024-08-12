@@ -25,7 +25,7 @@ opcion=int(input("Ingrese el número de la opción que deseas ver: "))
 if opcion==1:
     
     system("cls")
-    print("────୨ৎ────────୨ৎ────Registrar venta────୨ৎ────────୨ৎ────")
+    print("────୨ৎ────────୨ৎ──── Registrar venta ────୨ৎ────────୨ৎ────")
     print("")
     fechaventa=str(input("Ingrese la fecha"))
     print("")
